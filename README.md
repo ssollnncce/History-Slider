@@ -2,7 +2,7 @@
 ## Install
 ```bash
 git clone <repo-url>
-cd only.digital-testcase
+cd History-Slider
 npm install
 ```
 
