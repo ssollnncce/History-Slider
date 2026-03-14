@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SliderWrap = styled.div`
   width: 100%;
-  max-width: 1200px;
+  width: 100%
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -30,12 +30,14 @@ export const CardYear = styled.div`
     font-weight: 700;
     color: #2f66ff;
     font-size: 18px;
+    font-weight: thin;
 `;
 
 export const CardText = styled.div`
     font-size: 1.25rem;
-    width: 16rem;
+    min-width: 16rem;
     color: var(--black-blue);
+    font-weight: thin;
 
     @media (max-width: 768px) {
         font-size: 14px;

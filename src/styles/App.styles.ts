@@ -12,6 +12,30 @@ export const Screen = styled.div`
         padding: 24px 20px 32px;
         height: auto;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+            linear-gradient(to right, rgba(48, 62, 88, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(48, 62, 88, 0.2) 1px, transparent 1px);
+        background-size: 50% 50%;
+        box-shadow:
+            inset -1px 0 0 rgba(48, 62, 88, 0.2),
+            inset 0 -1px 0 rgba(48, 62, 88, 0.2);
+        z-index: 0;
+    }
+
+    @media (max-width: 768px) {
+        &::before {
+            display: none;
+        }
     }
 `;
 
@@ -192,6 +216,9 @@ export const BottomRow = styled.div`
 
     @media (max-width: 768px) {
         margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem
     }
 `;
 
