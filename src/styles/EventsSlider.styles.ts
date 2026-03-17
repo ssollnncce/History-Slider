@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SliderWrap = styled.div`
   width: 100%;
-  width: 100%
+  width: 100%;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -12,6 +12,10 @@ export const SliderWrap = styled.div`
   .swiper {
     flex: 1 1 auto;
     min-width: 0;
+  }
+
+  .swiper-slide {
+    box-sizing: border-box;
   }
 
   @media (max-width: 768px) {
@@ -24,6 +28,12 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+        max-width: 166px;
+        width: 166px;
+    }
 `;
 
 export const CardYear = styled.div`
@@ -35,13 +45,15 @@ export const CardYear = styled.div`
 
 export const CardText = styled.div`
     font-size: 1.25rem;
-    min-width: 16rem;
+    min-width: 0;
+    width: 100%;
     color: var(--black-blue);
     font-weight: thin;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
         font-size: 14px;
-        width: auto;
+        width: 166px;
     }
 `;
 

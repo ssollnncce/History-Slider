@@ -18,7 +18,7 @@ export const segments: Segment[] = [
         startYear: 1980,
         endYear: 1986,
         events: [
-            { year: 1980, text: "Sinclair Research выпускает домашний компьютер ZX80." },
+            { year: 1980, text: "Sinclair Research выпускает домашний компьютер ZX80. Sinclair Research выпускает домашний компьютер ZX80." },
             { year: 1982, text: "Появился домашний компьютер ZX Spectrum." },
             { year: 1984, text: "Apple представила компьютер Macintosh." },
             { year: 1985, text: "Microsoft выпускает Windows 1.0." },
